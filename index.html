@@ -7,8 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 
+    <div class="logo-background-image">
+        <img src="assets/images/background-image.jpg" alt="Logo Background Image">
+    </div>
+
+    <div class="form">
+        <form action="" method="post">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" placeholder="Allen..." id="first-name" name="first-name" minlength="1" required>
+
+            <label for="last-name">LAST NAME</label>
+            <input type="text" placeholder="Doe..." id="last-name" name="last-name" minlength="1" required>
+
+            <label for="email-address">EMAIL ADDRESS</label>
+            <input type="email" name="email-address" id="email-address" placeholder="your@example.com" required>
+
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="number" name="phone-number" id="phone-number" pattern="+254712123456" placeholder="+254..." required>
+
+            <label for="user-password">PASSWORD</label>
+            <input type="password" name="user-password" id="user-password" required minlength="6" maxlength="30">
+
+            <label for="confirm-user-password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-user-password" id="confirm-user-password" required minlength="6" maxlength="30">
+
+            <button type="submit">Create Account</button>
+
+            <div class="text-for-log-in">
+                <h4>Already have an account? <a href="log-in.html">Log In</a></h4>
+            </div>
+        </form>
+    </div>
 
     <script src="script.js"></script>
 </body>
